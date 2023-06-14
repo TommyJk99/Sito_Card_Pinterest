@@ -67,7 +67,7 @@ body{
 }
 /*BOTTONE DOWNLOAD*/
 .img-box .button-download{
-    opacity: 0;;
+    opacity: 0;
     padding: 0.45rem 0.45rem;
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
@@ -114,3 +114,20 @@ body{
 .pointer{
     cursor: pointer;
 }
+
+
+span:hover {
+    animation: button1 2000ms linear; 
+    animation-iteration-count: infinite;
+    border-radius: 25px;
+}
+
+/*
+@keyframes button1{
+    0% {border: 3px solid rgb(255, 255, 255);}
+    20% {border: 3px solid rgb(255, 226, 3);}
+    40% {border: 3px solid rgb(79, 236, 0);}
+    60% {border: 3px solid rgb(0, 217, 255);}
+    80% {border: 3px solid rgb(252, 91, 255);}
+    100% {border: 3px solid rgb(255, 255, 255);}
+}*/

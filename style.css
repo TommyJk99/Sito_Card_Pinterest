@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Rubik&display=swap');
+
+body{
+    margin:0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Rubik', sans-serif;
+}
+/*IMMAGINE E CONTENITORE ADATTATI*/
+.img-box{
+    width: 20rem;
+    height: 25rem;
+    position:relative;
+}
+.img-box img{
+    width: 100%;
+    height:100%;
+    border-radius: 25px;
+    object-fit:cover;
+    box-shadow: 5px 5px 15px -5px rgba(0,0,0,0.87);
+}
+/*LUMINOSITA E SHADOW IMAGINE*/
+.img-box:hover img{
+    filter: brightness(0.6);
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+/*BOTTONE SAVE*/
+.img-box .button-save{
+    opacity: 0;
+    padding: 1rem 1rem;
+    background-color: red;
+    color: white;
+    border-radius: 50px;
+    font-weight: bold;
+    position: absolute;
+    top: 0rem;
+    right: 1rem;
+    transition: opacity 200ms ease-out, transform 250ms linear;
+}
+.img-box:hover .button-save{
+    transform: translateY(1rem);
+    opacity: 1;
+}
+/*BOTTONE ARROW*/
+.img-box .button-arrow{
+    opacity:0;
+    display: inline;
+    padding: 0.5rem 1rem;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border-radius: 50px;
+    font-weight: bold;
+    position: absolute;
+    bottom:0rem;
+    left:1rem;
+    transition: opacity 200ms ease-out, transform 250ms linear;
+}
+.img-box:hover .button-arrow{
+    opacity: 0.9;
+    transform: translateY(-1rem);
+}
+.button-arrow ion-icon{
+    vertical-align: text-top;
+    transform: rotate(45deg);
+}
+/*BOTTONE DOWNLOAD*/
+.img-box .button-download{
+    opacity: 0;;
+    padding: 0.45rem 0.45rem;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    line-height: 10px; /*wow*/
+    border-radius: 50px;
+    font-weight: bold;
+    position: absolute;
+    bottom:0rem;
+    right:4rem;
+    transition: opacity 200ms ease-out, transform 250ms linear;
+}
+.img-box:hover .button-download{
+    opacity: 0.7;
+    transform: translateY(-1rem);
+}
+.button-download ion-icon{
+    font-size: 20px;
+}
+/*BOTTONE PUNTINI*/
+.img-box .button-puntini{
+    opacity: 0;
+    padding: 0.45rem 0.45rem;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    line-height: 10px; 
+    border-radius: 50px;
+    font-weight: bold;
+    position: absolute;
+    bottom:0rem;
+    right:1rem;
+    transition: opacity 200ms ease-out, transform 250ms linear;
+}
+.img-box:hover .button-puntini{
+    opacity: 0.7;
+    transform: translateY(-1rem) ;
+}
+.button-puntini ion-icon{
+    font-size: 20px;
+}
+/*USER SELECT*/
+.no-touch{
+    user-select: none;
+}
+.pointer{
+    cursor: pointer;
+}
